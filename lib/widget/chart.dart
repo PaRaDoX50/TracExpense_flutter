@@ -42,7 +42,7 @@ class Chart extends StatelessWidget {
     return LayoutBuilder(builder: (ctx, constraints) {
       return Container(width: double.infinity,
           child: Padding(
-            padding: EdgeInsets.all(constraints.maxHeight*.05),
+            padding: EdgeInsets.only(left:constraints.maxHeight*.05,top:0,right:constraints.maxHeight*.05,bottom:constraints.maxHeight*.05),
             child: Card(elevation: 5,
 
                 child: Column(mainAxisAlignment: MainAxisAlignment.spaceAround,
